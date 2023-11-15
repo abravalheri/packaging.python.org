@@ -41,10 +41,14 @@ What commands should be used instead?
 
 
 .. [#needs-build] This requires the :ref:`build` dependency.
-    It is recommended to always build and publish both the source distribution
-    and wheel of a project, which is what ``python -m build`` does.
+    It is recommended to always build and publish both the source distribution (sdist)
+    and wheel of a project.
+    It is also recommended to build the wheel from the sdist,
+    as a form of testing the sdist works.
+    This is what ``python -m build`` does.
     If necessary the ``--sdist`` and ``--wheel`` options can be used
-    to generate only one or the other.
+    to generate only one or the other,
+    however you might have to manually test the sdist.
 
 
 In order to install a setuptools based project,
